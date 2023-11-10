@@ -10,7 +10,6 @@
     "nodemon": "^3.0.1"
   },
   "scripts": {
-    "start": "nodemon app.js",
-    "build": "yarn i"
+    "start": "nodemon app.js"
   }
 }
