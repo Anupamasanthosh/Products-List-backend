@@ -44,7 +44,7 @@ module.exports = {
         return res.status(400).json({ message: "not get" });
       }
     } catch (err) {
-      return res.status(500).json({err:err});
+      return res.status(500).json(err);
     }
   },
   editProduct: async (req, res) => {
