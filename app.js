@@ -5,14 +5,18 @@ require('./utils/dataBase')
 
 const app=express()
 
-app.use(cors())
+const corsOptions = {
+    origin: "https://unique-ganache-92c122.netlify.app"
+}
+
+app.use(cors(corsOptions));
 app.use(express.json())
 
 //routes
 
 const userRoute=require('./routes/user')
 
-app.use('/api',userRoute)
+app.use('/',userRoute)
 
 app.listen(process.env.PORT,()=>
 {
