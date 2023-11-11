@@ -6,7 +6,7 @@ require('./utils/dataBase')
 const app=express()
 
 const corsOptions = {
-    origin: "https://unique-ganache-92c122.netlify.app"
+    origin: "https://product-lists.onrender.com"
 }
 
 app.use(cors(corsOptions));
